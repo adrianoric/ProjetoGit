@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Botão da Apple Store</title>
+    <title>Botão para a App Store da Apple com hover e mensagem de título</title>
     <style>
       /* Estilos para o botão */
-      #apple-store-btn {
+      #app-store-btn {
         cursor: pointer;
         width: 200px;
         height: 50px;
+        background-color: #0070c9;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s ease;
       }
-      #apple-store-btn:hover {
-        background-color: #a6a6a6;
+      #app-store-btn:hover {
+        background-color: #1d85e8;
+      }
+      #app-store-btn img {
+        height: 80%;
       }
     </style>
   </head>
   <body>
-    <a href="https://www.apple.com/br/shop" target="_blank">
-      <svg id="apple-store-btn" viewBox="0 0 200 50">
-        <rect x="0" y="0" width="200" height="50" rx="8" fill="#000" />
-        <path d="M150 15 L100 15 L90 5 L80 15 L30 15 L45 25 L35 35 L55 30 L60 40 L70 30 L100 30 L90 20 L150 20 Z" fill="#fff" />
-        <text x="105" y="32" font-family="Helvetica Neue" font-size="18" font-weight="bold" fill="#000">Apple Store</text>
-      </svg>
+    <a href="https://www.apple.com/br/app-store/" target="_blank">
+      <div id="app-store-btn" title="Para ir na Apple Store">
+        <img src="caminho/para/a/imagem/apple-store.png" alt="Ícone da App Store">
+      </div>
     </a>
   </body>
 </html>
